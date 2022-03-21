@@ -1,5 +1,4 @@
-from weapon import Weapon
-#fix import
+from Weapons import Weapon
 
 class Robot:
     def __init__(self, name): #possibly add power level later
