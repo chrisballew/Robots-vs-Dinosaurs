@@ -1,11 +1,12 @@
 class Dinosaur:
-    def __init__(self, name, attack_power): #possibly add energy level later on
-        self.dinoname = name
-        self.dinohealth = 
-        self.dinoapower = attack_power #attack power needed.
+    def __init__(self, name, attack_power):
+        self.type = type
+        self.attack = attack_power
+        self.health = 100
+       
     
-#I need three dinosaur objects?
-
-    def dino_attack(self, robot):
-        pass
-
+    def dinosaur_attack(self, robot):
+        if self.health > 0:
+            robot.health = robot.health - self.attack
+            print(f'{robot.type} HP is now {robot.health}')
+            return robot.health

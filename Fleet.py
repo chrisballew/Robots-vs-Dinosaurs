@@ -1,7 +1,18 @@
+from Weapons import Weapon
+from Robot import Robot
+
 class Fleet:
     def __init__(self):
         self.robots = []
-        pass
+        self.create_fleet()
 
     def create_fleet(self):
-        pass
+        weapon_1 = Weapon("graviton gun", 30)
+        weapon_2 = Weapon("lightning claws", 15)
+        weapon_3 = Weapon("antimatter cannon", 50)
+        robot_1 = Robot("Grav-Warrior", weapon_1)
+        robot_2 = Robot("Hunter-Killer", weapon_2)
+        robot_3 = Robot("Annihilator", weapon_3)
+        self.robots.append(robot_1)
+        self.robots.append(robot_2)
+        self.robots.append(robot_3)
