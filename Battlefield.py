@@ -1,6 +1,4 @@
 import random
-from Dinosaur import Dinosaur
-from Robot import Robot
 from Herd import Herd
 from Fleet import Fleet
 

@@ -5,7 +5,7 @@ class Robot:
     def __init__(self, name, Weapon):
         self.name = name
         self.health = 500
-        self.weapon = Weapon("Antimatter Missiles", 50)
+        self.weapon = Weapon
     
     def robot_attack(self, dinosaur):
         if self.health > 0:
